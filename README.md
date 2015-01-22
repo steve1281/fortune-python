@@ -12,4 +12,6 @@ Any other string (not -o not -o) will cause the program to
 try to open it as a fortune source.
 
 Note:  fortune files are human readable text seperated by %%
+(I borrowed the original BSD files for this scene and obscene)
+
 
