@@ -1,4 +1,0 @@
-some entry
-=======
-This file will conflicte with the same in the master.
-
