@@ -1,5 +1,5 @@
 # fortune-python
-Quick python script to implement a simple fortune
+Quick python 2.7 script to implement a simple fortune
 
 This is not meant to be a full implementation.
 
