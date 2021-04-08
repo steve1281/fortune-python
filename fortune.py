@@ -13,6 +13,13 @@ import logging
 import os
 import random
 
+# --- argparse
+
+_parser = argparse.ArgumentParser()
+_parser.add_argument('-o', '--obscene', action='store_true', default=False, help="Activate adult humor.")
+_parser.add_argument('-d', '--debug', action='store_true', default=False, help="Turn on debugging.")
+args = _parser.parse_args()
+
 # --- log level
 LOG_LEVEL = os.environ.get('LOG_LEVEL', "TRUE")
 
@@ -27,14 +34,11 @@ elif LOG_LEVEL == "ERROR":
 else:
     log_level = logging.ERROR
 
+if args.debug:
+    log_level = logging.DEBUG
+
 logging.basicConfig(level=log_level)
 
-# --- argparse
-
-_parser = argparse.ArgumentParser()
-_parser.add_argument('--obscene', action='store', type=bool, required=False, default=False, help="Activate adult humor.")
-_parser.add_argument('--debug', action='store', type=bool, required=False, default=False, help="Turn on debugging.")
-args = _parser.parse_args()
 
 
 def get_record_count(filename):
