@@ -14,4 +14,7 @@ try to open it as a fortune source.
 Note:  fortune files are human readable text seperated by %%
 (I borrowed the original BSD files for this scene and obscene)
 
+# update April 8, 2021
+
+Another old script. Updating to python 3.8 :-)
 
